@@ -303,6 +303,9 @@ private:
     /* Toml */
     void tomlQuote (const QString &text);
 
+    /* LISP */
+    void highlightLispBlock(const QString &text);
+
     struct HighlightingRule
     {
         QRegularExpression pattern;

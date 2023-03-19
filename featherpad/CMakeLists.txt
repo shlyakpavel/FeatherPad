@@ -117,6 +117,7 @@ set(featherpad_SRCS
     highlighter/highlighter-json.cpp
     highlighter/highlighter-html.cpp
     highlighter/highlighter-lua.cpp
+    highlighter/highlighter-lisp.cpp
     highlighter/highlighter-markdown.cpp
     highlighter/highlighter-pascal.cpp
     highlighter/highlighter-patterns.cpp

@@ -3979,6 +3979,7 @@ void Highlighter::latexFormula (const QString &text)
 // Start syntax highlighting!
 void Highlighter::highlightBlock (const QString &text)
 {
+    progLan = "lisp";
     if (progLan.isEmpty()) return;
 
     if (progLan == "json")
@@ -4032,6 +4033,11 @@ void Highlighter::highlightBlock (const QString &text)
         if (progLan == "lua")
         {
             highlightLuaBlock (text);
+            return;
+        }
+        if (progLan == "lisp")
+        {
+            highlightLispBlock (text);
             return;
         }
     }
